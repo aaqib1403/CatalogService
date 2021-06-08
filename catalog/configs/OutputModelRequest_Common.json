@@ -1,0 +1,430 @@
+{
+  "TableViewConfig": {
+    "displayStart": 1,
+    "displayLength": 10,
+    "Resources": {
+      "Term": {
+        "Signifier": {
+          "name": "FullName"
+        },
+        "DisplayName": {
+          "name": "DisplayName"
+        },        
+        "AvgRating": {
+          "name": "AvgRating"
+        },
+        "Id": {
+          "name": "Id"
+        },
+        "CreatedOn": {
+          "name": "CreatedOn"
+        },
+        "LastModified": {
+          "name": "LastModifiedOn"
+        },
+        "Vocabulary": {
+          "Name": {
+            "name": "Domain_Name"
+          },
+          "Id": {
+            "name": "Domain_Id"
+          },
+          "Community": {
+            "Name": {
+              "name": "Domain_Community_Name"
+            },
+            "HasNonMetaChildren": {
+              "name": "Domain_Community_HasNonMetaChildren"
+            },
+            "Id": {
+              "name": "Domain_Community_Id"
+            }
+          }
+        },
+        "Status": {
+          "Signifier": {
+            "name": "Status_Name"
+          },
+          "Id": {
+            "name": "Status_Id"
+          }
+        },
+        "ConceptType": {
+          "Signifier": {
+            "name": "AssetType_Name"
+          },
+          "Id": {
+            "name": "AssetType_Id"
+          }
+        },
+        "StringAttribute": [
+          {
+            "labelId": "00000000-0000-0000-0000-000000000202",
+            "LongExpression": {
+              "name": "StringAttribute_00000000-0000-0000-0000-000000000202_Value"
+            },
+            "Id": {
+              "name": "StringAttribute_00000000-0000-0000-0000-000000000202_Id"
+            }
+          },
+          {
+            "labelId": "00000000-0000-0000-0000-000000003114",
+            "LongExpression": {
+              "name": "StringAttribute_00000000-0000-0000-0000-000000003114_Value"
+            },
+            "Id": {
+              "name": "StringAttribute_00000000-0000-0000-0000-000000003114_Id"
+            }
+          }
+        ],
+        "User": {
+          "UserName": {
+            "name": "CreatedBy_UserName"
+          },
+          "FirstName": {
+            "name": "CreatedBy_FirstName"
+          },
+          "LastName": {
+            "name": "CreatedBy_LastName"
+          },
+          "Id": {
+            "name": "CreatedBy_Id"
+          }
+        },
+        "Member": [
+          {
+            "roleId": "00000000-0000-0000-0000-000000005040",
+            "User": {
+              "UserName": {
+                "name": "Responsibility_00000000-0000-0000-0000-000000005040_User_UserName"
+              },
+              "FirstName": {
+                "name": "Responsibility_00000000-0000-0000-0000-000000005040_User_FirstName"
+              },
+              "LastName": {
+                "name": "Responsibility_00000000-0000-0000-0000-000000005040_User_LastName"
+              },
+              "Id": {
+                "name": "Responsibility_00000000-0000-0000-0000-000000005040_User_Id"
+              }
+            },
+            "Group": {
+              "GroupName": {
+                "name": "Responsibility_00000000-0000-0000-0000-000000005040_UserGroup_Name"
+              },
+              "Id": {
+                "name": "Responsibility_00000000-0000-0000-0000-000000005040_UserGroup_Id"
+              }
+            }
+          },
+          {
+            "roleId": "00000000-0000-0000-0000-000000005035",
+            "User": {
+              "UserName": {
+                "name": "Responsibility_00000000-0000-0000-0000-000000005035_User_UserName"
+              },
+              "FirstName": {
+                "name": "Responsibility_00000000-0000-0000-0000-000000005035_User_FirstName"
+              },
+              "LastName": {
+                "name": "Responsibility_00000000-0000-0000-0000-000000005035_User_LastName"
+              },
+              "Id": {
+                "name": "Responsibility_00000000-0000-0000-0000-000000005035_User_Id"
+              }
+            },
+            "Group": {
+              "GroupName": {
+                "name": "Responsibility_00000000-0000-0000-0000-000000005035_UserGroup_Name"
+              },
+              "Id": {
+                "name": "Responsibility_00000000-0000-0000-0000-000000005035_UserGroup_Id"
+              }
+            }
+          }
+        ],
+        "Tag": [
+          {
+            "Name": {
+              "name": "Tag_Name"
+            },
+            "Id": {
+              "name": "Tag_Id"
+            }
+          }
+        ],
+        "Filter": {
+          "AND": [
+          ]
+        },
+        "Order": [
+          {
+            "Field": {
+              "name": "CreatedOn",
+              "order": "DESC"
+            }
+          }
+        ]
+      }
+    },
+    "Columns": [
+      {
+        "Column": {
+          "fieldName": "FullName",
+          "label": "Full Name"
+        }
+      },
+      {
+        "Column": {
+          "fieldName": "DisplayName",
+          "label": "Name"
+        }
+      },
+      {
+        "Column": {
+          "fieldName": "Id",
+          "label": "Asset Id"
+        }
+      },
+      {
+        "Group": {
+          "name": "StringAttribute_00000000-0000-0000-0000-000000000202",
+          "Columns": [
+            {
+              "Column": {
+                "fieldName": "StringAttribute_00000000-0000-0000-0000-000000000202_Value",
+                "label": "Definition"
+              }
+            },
+            {
+              "Column": {
+                "fieldName": "StringAttribute_00000000-0000-0000-0000-000000000202_Id",
+                "label": "Definition Id"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "Group": {
+          "name": "StringAttribute_00000000-0000-0000-0000-000000003114",
+          "Columns": [
+            {
+              "Column": {
+                "fieldName": "StringAttribute_00000000-0000-0000-0000-000000003114_Value",
+                "label": "Description"
+              }
+            },
+            {
+              "Column": {
+                "fieldName": "StringAttribute_00000000-0000-0000-0000-000000003114_Id",
+                "label": "Description Id"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "Group": {
+          "name": "Tag",
+          "Columns": [
+            {
+              "Column": {
+                "fieldName": "Tag_Name",
+                "label": "Tag"
+              }
+            },
+            {
+              "Column": {
+                "fieldName": "Tag_Id",
+                "label": "Tag id"
+              }
+            }
+          ]
+        }
+      }, 
+      {
+        "Group": {
+          "name": "Responsibility_00000000-0000-0000-0000-000000005040",
+          "Columns": [
+            {
+              "Column": {
+                "fieldName": "Responsibility_00000000-0000-0000-0000-000000005040_User_UserName",
+                "label": "Roles > Owner > User Name"
+              }
+            },
+            {
+              "Column": {
+                "fieldName": "Responsibility_00000000-0000-0000-0000-000000005040_User_FirstName",
+                "label": "Roles > Owner > First Name"
+              }
+            },
+            {
+              "Column": {
+                "fieldName": "Responsibility_00000000-0000-0000-0000-000000005040_User_LastName",
+                "label": "Roles > Owner > Last Name"
+              }
+            },
+            {
+              "Column": {
+                "fieldName": "Responsibility_00000000-0000-0000-0000-000000005040_User_Id",
+                "label": "Roles > Owner > User Id"
+              }
+            },
+            {
+              "Column": {
+                "fieldName": "Responsibility_00000000-0000-0000-0000-000000005040_UserGroup_Name",
+                "label": "Roles > Owner > Group Name"
+              }
+            },
+            {
+              "Column": {
+                "fieldName": "Responsibility_00000000-0000-0000-0000-000000005040_UserGroup_Id",
+                "label": "Roles > Owner > Group Id"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "Group": {
+          "name": "Responsibility_00000000-0000-0000-0000-000000005035",
+          "Columns": [
+            {
+              "Column": {
+                "fieldName": "Responsibility_00000000-0000-0000-0000-000000005035_User_UserName",
+                "label": "Roles > Subject Matter Expert > User Name"
+              }
+            },
+            {
+              "Column": {
+                "fieldName": "Responsibility_00000000-0000-0000-0000-000000005035_User_FirstName",
+                "label": "Roles > Subject Matter Expert > First Name"
+              }
+            },
+            {
+              "Column": {
+                "fieldName": "Responsibility_00000000-0000-0000-0000-000000005035_User_LastName",
+                "label": "Roles > Subject Matter Expert > Last Name"
+              }
+            },
+            {
+              "Column": {
+                "fieldName": "Responsibility_00000000-0000-0000-0000-000000005035_User_Id",
+                "label": "Roles > Subject Matter Expert > User Id"
+              }
+            },
+            {
+              "Column": {
+                "fieldName": "Responsibility_00000000-0000-0000-0000-000000005035_UserGroup_Name",
+                "label": "Roles > Subject Matter Expert > Group Name"
+              }
+            },
+            {
+              "Column": {
+                "fieldName": "Responsibility_00000000-0000-0000-0000-000000005035_UserGroup_Id",
+                "label": "Roles > Subject Matter Expert > Group Id"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "Column": {
+          "fieldName": "Domain_Name",
+          "label": "Domain"
+        }
+      },
+      {
+        "Column": {
+          "fieldName": "Domain_Id",
+          "label": "Domain Id"
+        }
+      },
+      {
+        "Column": {
+          "fieldName": "Status_Name",
+          "label": "Status"
+        }
+      },
+      {
+        "Column": {
+          "fieldName": "Status_Id",
+          "label": "Status Id"
+        }
+      },
+      {
+        "Column": {
+          "fieldName": "AssetType_Name",
+          "label": "Asset Type"
+        }
+      },
+      {
+        "Column": {
+          "fieldName": "AssetType_Id",
+          "label": "Asset Type Id"
+        }
+      },
+      {
+        "Column": {
+          "fieldName": "CreatedOn",
+          "label": "CreatedOn"
+        }
+      },
+      {
+        "Column": {
+          "fieldName": "CreatedBy_UserName",
+          "label": "CreatedBy_UserName"
+        }
+      },
+      {
+        "Column": {
+          "fieldName": "CreatedBy_FirstName",
+          "label": "CreatedBy_FirstName"
+        }
+      },
+      {
+        "Column": {
+          "fieldName": "CreatedBy_LastName",
+          "label": "CreatedBy_LastName"
+        }
+      },
+      {
+        "Column": {
+          "fieldName": "CreatedBy_Id",
+          "label": "CreatedBy_Id"
+        }
+      },
+      {
+        "Column": {
+          "fieldName": "LastModifiedOn",
+          "label": "LastModifiedOn"
+        }
+      },
+      {
+        "Column": {
+          "fieldName": "AvgRating",
+          "label": "AvgRating"
+        }
+      },
+	  {
+        "Column": {
+          "fieldName": "Domain_Community_Name",
+          "label": "Community"
+        }
+      },
+      {
+        "Column": {
+          "fieldName": "Domain_Community_HasNonMetaChildren",
+          "label": "Community Has non-meta children"
+        }
+      },
+      {
+        "Column": {
+          "fieldName": "Domain_Community_Id",
+          "label": "Community Id"
+        }
+      }
+    ]
+  }
+}
