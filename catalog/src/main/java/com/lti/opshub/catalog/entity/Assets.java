@@ -9,6 +9,7 @@ import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
 import javax.persistence.EntityListeners;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
@@ -23,16 +24,14 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 @Entity
 @Table(name= "assets")
 @Data
-@EntityListeners(AuditingEntityListener.class)
+@EntityListeners({AuditingEntityListener.class, AssetEntityListener.class})
 public class Assets {
 	
 	@Id
-	@GeneratedValue
+	@GeneratedValue(strategy= GenerationType.AUTO)
 	@Column(name = "id")
 	private int id;
-	
-	@GeneratedValue(generator = "uuid")
-	@GenericGenerator(name ="uuid",strategy = "uuid2")
+
 	@Column(name="assetId", unique = true, nullable = false, updatable = false)
 	private String assetid;
 	
